@@ -1,5 +1,6 @@
 FROM arm32v7/debian
 WORKDIR /app
 ADD gotify-app /app/
+ADD ui/build /ui/build/
 EXPOSE 80
 ENTRYPOINT ["./gotify-app"]
